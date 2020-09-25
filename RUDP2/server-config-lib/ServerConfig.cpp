@@ -34,7 +34,7 @@ ServerConfig::ServerConfig()
   m_controlAuthAlwaysChecking(false),
   m_acceptRfbConnections(true), m_useAuthentication(false),
   m_onlyLoopbackConnections(true), m_acceptHttpConnections(false),
-  m_enableAppletParamInUrl(false), m_enableFileTransfers(true),
+  m_enableAppletParamInUrl(false), m_enableFileTransfers(false),
   m_mirrorDriverAllowed(false),
   m_removeWallpaper(false), m_hasReadOnlyPassword(true),
   m_hasPrimaryPassword(false), m_alwaysShared(true), m_neverShared(false),
