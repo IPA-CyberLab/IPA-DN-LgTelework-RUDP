@@ -96,17 +96,17 @@ Clipboard::processMessage(UINT msg, WPARAM wParam, LPARAM lParam) {
   switch (msg) {
 
   case WM_CHANGECBCHAIN:
-    vlog.debug("change clipboard chain (%x, %x)", wParam, lParam);
+/*    vlog.debug("change clipboard chain (%x, %x)", wParam, lParam);
     if ((HWND) wParam == next_window)
       next_window = (HWND) lParam;
     else if (next_window != 0)
       SendMessage(next_window, msg, wParam, lParam);
     else
-      vlog.error("bad clipboard chain change!");
+      vlog.error("bad clipboard chain change!");*/
     break;
 
   case WM_DRAWCLIPBOARD:
-    {
+ /*   {
       HWND owner = GetClipboardOwner();
       if (owner == getHandle()) {
         vlog.debug("local clipboard changed by me");
@@ -143,7 +143,7 @@ Clipboard::processMessage(UINT msg, WPARAM wParam, LPARAM lParam) {
 			}
     }
     if (next_window)
-		  SendMessage(next_window, msg, wParam, lParam);
+		  SendMessage(next_window, msg, wParam, lParam); */
     return 0;
 
   };
