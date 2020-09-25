@@ -73,11 +73,11 @@ void FileTransferSecurity::beginMessageProcessing()
 
 void FileTransferSecurity::throwIfAccessDenied()
 {
-  if (!m_hasAccess) {
-    throw Exception(_T("Access denied."));
-  } else if (!Configurator::getInstance()->getServerConfig()->isFileTransfersEnabled()) {
+  //if (!m_hasAccess) {
+  //  throw Exception(_T("Access denied."));
+  //} else if (!Configurator::getInstance()->getServerConfig()->isFileTransfersEnabled()) {
     throw Exception(_T("File transfers are disabled on server side."));
-  }
+  //}
 }
 
 void FileTransferSecurity::endMessageProcessing()

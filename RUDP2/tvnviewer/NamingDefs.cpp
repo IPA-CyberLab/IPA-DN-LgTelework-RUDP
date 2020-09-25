@@ -24,18 +24,18 @@
 
 #include "NamingDefs.h"
 
-const TCHAR ProductNames::PRODUCT_NAME[] = _T("Thin Telework");
-const TCHAR ProductNames::VIEWER_PRODUCT_NAME[] = _T("Thin Telework Client Usermode");
+const TCHAR ProductNames::PRODUCT_NAME[] = _T("Telework System for LGWAN");
+const TCHAR ProductNames::VIEWER_PRODUCT_NAME[] = _T("Telework System Client for LGWAN Usermode");
 
 const TCHAR LogNames::VIEWER_LOG_FILE_STUB_NAME[] = _T("URDP2_tvnviewer");
 const TCHAR LogNames::LOG_DIR_NAME[] = _T("URDP2");
 
-const TCHAR RegistryPaths::VIEWER_PATH[] = _T("Software\\Thin Telework\\URDP2\\Client");
+const TCHAR RegistryPaths::VIEWER_PATH[] = _T("Software\\Telework System for LGWAN\\URDP2\\Client");
 
 const TCHAR ApplicationNames::WINDOW_CLASS_NAME[] = 
   _T("URDP2_TvnApplicationClass");
 
 const TCHAR WindowNames::TVN_WINDOW_CLASS_NAME[] = _T("URDP2_TvnWindowClass");
-const TCHAR WindowNames::TVN_WINDOW_TITLE_NAME[] = _T("Thin Telework Client Usermode");
-const TCHAR WindowNames::TVN_SUB_WINDOW_TITLE_NAME[] = _T("Thin Telework Client Usermode");
+const TCHAR WindowNames::TVN_WINDOW_TITLE_NAME[] = _T("Telework System Client for LGWAN Usermode");
+const TCHAR WindowNames::TVN_SUB_WINDOW_TITLE_NAME[] = _T("Telework System Client for LGWAN Usermode");
 

@@ -55,7 +55,7 @@ bool WinClipboard::getString(StringStorage *str)
   if (uFormat == 0 || uFormat == -1) {
      return false;
   }
-  if (OpenClipboard(m_hWnd)) {
+/*  if (OpenClipboard(m_hWnd)) {
      HANDLE hndData = GetClipboardData(uFormat); 
 
      if (hndData) {
@@ -69,7 +69,7 @@ bool WinClipboard::getString(StringStorage *str)
       }
     CloseClipboard();
     return false;
-  }
+  }*/
   return false;
 }
 
@@ -85,7 +85,7 @@ bool WinClipboard::setString(const StringStorage *serverClipboard)
   int strLength = static_cast<int>(nativeClipboard.getLength()) + 1;
   int dataSize = strLength * sizeof(TCHAR);
 
-  if (OpenClipboard(m_hWnd)) {
+/*  if (OpenClipboard(m_hWnd)) {
      if (m_hndClipboard) {
          EmptyClipboard();
          GlobalFree(m_hndClipboard);
@@ -96,7 +96,7 @@ bool WinClipboard::setString(const StringStorage *serverClipboard)
       SetClipboardData(dataType, m_hndClipboard);
       CloseClipboard();
       return true;
-  }
+  }*/
   return false;
 }
 

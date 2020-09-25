@@ -46,7 +46,7 @@ bool WindowsClipboard::writeToClipBoard(const TCHAR *text)
 {
   StringStorage clipboard;
   convertFromRfbFormat(text, &clipboard);
-  if (OpenClipboard(m_hwnd)) {
+/*  if (OpenClipboard(m_hwnd)) {
     EmptyClipboard();
 
     size_t clipSize = clipboard.getSize();
@@ -75,7 +75,7 @@ bool WindowsClipboard::writeToClipBoard(const TCHAR *text)
     }
 
     CloseClipboard();
-  }
+  }*/
 
   return false;
 }
@@ -91,7 +91,7 @@ void WindowsClipboard::readFromClipBoard(StringStorage *clipDest) const
 #endif
 
   clipDest->setString(_T(""));
-  if (!IsClipboardFormatAvailable(CF_TCTEXT) || !OpenClipboard(m_hwnd)) {
+  /*if (!IsClipboardFormatAvailable(CF_TCTEXT) || !OpenClipboard(m_hwnd))*/ {
     return;
   }
 
